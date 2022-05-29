@@ -1,0 +1,8 @@
++0 clk
++1,.25 aclk
+
+zzzzzxxx^^^^______zz a
+xx_^_^_^_^_^_^_^_^xx b
+__/^^^\_____________ c
+xx<-><->xxx<->xxxxxx d NOP,ACK,SYN
+
