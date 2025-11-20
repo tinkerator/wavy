@@ -259,8 +259,8 @@ func main() {
 				gc.Stroke()
 			case "^\\":
 				gc.MoveTo(start, mid-demi)
-				gc.LineTo(start+half*0.9, mid-demi)
-				gc.LineTo(start+half*1.1, mid+demi)
+				gc.LineTo(start+half*0.7, mid-demi)
+				gc.LineTo(start+half*1.3, mid+demi)
 				gc.LineTo(start+full, mid+demi)
 				gc.Stroke()
 			case "__", "\\_", "%_", "_%":
@@ -275,20 +275,20 @@ func main() {
 				gc.Stroke()
 			case "_/":
 				gc.MoveTo(start, mid+demi)
-				gc.LineTo(start+half*0.9, mid+demi)
-				gc.LineTo(start+half*1.1, mid-demi)
+				gc.LineTo(start+half*0.7, mid+demi)
+				gc.LineTo(start+half*1.3, mid-demi)
 				gc.LineTo(start+full, mid-demi)
 				gc.Stroke()
-			case "><":
+			case "><", ">>":
 				gc.MoveTo(start, mid-demi)
-				gc.LineTo(start+0.9*half, mid-demi)
-				gc.LineTo(start+1.1*half, mid+demi)
+				gc.LineTo(start+0.7*half, mid-demi)
+				gc.LineTo(start+1.3*half, mid+demi)
 				gc.LineTo(start+full, mid+demi)
 				lastEnd = start + half
-				showLabel = true
+				showLabel = combo != ">>"
 				gc.MoveTo(start, mid+demi)
-				gc.LineTo(start+0.9*half, mid+demi)
-				gc.LineTo(start+1.1*half, mid-demi)
+				gc.LineTo(start+0.7*half, mid+demi)
+				gc.LineTo(start+1.3*half, mid-demi)
 				gc.LineTo(start+full, mid-demi)
 				gc.Stroke()
 				nextStart = start + half
@@ -328,9 +328,9 @@ func main() {
 				gc.Stroke()
 			case ">x":
 				gc.MoveTo(start, mid-demi)
-				gc.LineTo(start+0.9*half, mid-demi)
+				gc.LineTo(start+0.7*half, mid-demi)
 				gc.LineTo(start+half, mid)
-				gc.LineTo(start+0.9*half, mid+demi)
+				gc.LineTo(start+0.7*half, mid+demi)
 				gc.LineTo(start, mid+demi)
 				lastEnd = start + half
 				showLabel = true
