@@ -339,7 +339,7 @@ func main() {
 				gc.LineTo(start+half, mid)
 				gc.LineTo(start+full, mid-demi)
 				gc.Stroke()
-			case "x<":
+			case "x<", "x>":
 				gc.MoveTo(start, mid+demi)
 				gc.LineTo(start+half, mid)
 				gc.LineTo(start, mid-demi)
