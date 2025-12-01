@@ -320,7 +320,7 @@ func main() {
 				gc.MoveTo(start, mid+demi)
 				gc.LineTo(start+full, mid+demi)
 				gc.Stroke()
-			case "xx", "<-", "->", "--", "x%", "%x", "-%", "%-":
+			case "xx", "<-", "<>", "->", "--", "x%", "%x", "-%", "%-":
 				gc.MoveTo(start, mid+demi)
 				gc.LineTo(start+full, mid+demi)
 				gc.MoveTo(start, mid-demi)
